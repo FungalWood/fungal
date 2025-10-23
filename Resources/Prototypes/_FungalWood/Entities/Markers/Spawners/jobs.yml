@@ -1,0 +1,47 @@
+- type: entity
+  id: FWSpawnPointKing
+  parent: SpawnPointJobBase
+  name: king
+  components:
+  - type: SpawnPoint
+    job_id: FWKing
+  - type: Sprite
+    layers:
+    - state: green
+    - state: passenger
+
+- type: entity
+  id: FWSpawnPointGuardCaptain
+  parent: SpawnPointJobBase
+  name: guard captain
+  components:
+  - type: SpawnPoint
+    job_id: FWGuardCaptain
+  - type: Sprite
+    layers:
+    - state: green
+    - state: passenger
+
+- type: entity
+  id: FWSpawnPointGuard
+  parent: SpawnPointJobBase
+  name: guard
+  components:
+  - type: SpawnPoint
+    job_id: FWTownGuard
+  - type: Sprite
+    layers:
+    - state: green
+    - state: passenger
+
+- type: entity
+  id: FWSpawnPointPeasant
+  parent: SpawnPointJobBase
+  name: peasant
+  components:
+  - type: SpawnPoint
+    job_id: FWPeasant
+  - type: Sprite
+    layers:
+    - state: green
+    - state: passenger

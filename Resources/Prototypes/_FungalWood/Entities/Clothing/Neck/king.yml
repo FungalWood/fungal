@@ -1,7 +1,7 @@
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckKingCape
-  name: the king's cape
+  id: FWClothingNeckKingCape
+  name: king's cape
   description: The responsibilities of a king weigh heavy upon the wearer... mostly thanks to the sheer amount of fabric.
   components:
   - type: Sprite

@@ -1,0 +1,27 @@
+- type: department
+  id: FWNoble
+  name: department-Noble
+  description: department-Noble-description
+  color: "#9FED58"
+  weight: 100
+  roles:
+  - FWKing
+
+- type: department
+  id: FWGuardsmen
+  name: department-Guardsmen
+  description: department-Guardsmen-description
+  color: "#9FED58"
+  weight: 50
+  roles:
+  - FWGuardCaptain
+  - FWTownGuard
+
+- type: department
+  id: FWCommoner
+  name: department-Commoner
+  description: department-Commoner-description
+  color: "#9FED58"
+  weight: -10
+  roles:
+  - FWPeasant

@@ -177,6 +177,8 @@ entities:
     - type: Transform
       pos: 4.5,2.5
       parent: 2
+- proto: FWSpawnPointPeasant
+  entities:
   - uid: 14
     components:
     - type: Transform
