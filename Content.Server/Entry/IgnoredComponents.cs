@@ -23,7 +23,8 @@ namespace Content.Server.Entry
             "AnomalyScannerScreen",
             "MultipartMachineGhost",
             "DirectionalArrowIndicator",
-            "SandboxCopyable"
+            "SandboxCopyable",
+            "EdgeTrim" // Funky Change
         };
     }
 }
