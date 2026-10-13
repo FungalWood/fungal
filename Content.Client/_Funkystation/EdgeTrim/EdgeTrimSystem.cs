@@ -210,14 +210,14 @@ namespace Content.Client._FunkyStation.EdgeTrim
 
             int[] keys = new int[8];
             var pos = _mapSystem.TileIndicesFor(gridUid, grid, xform.Coordinates);
-            keys[0] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.South)));
-            keys[1] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.SouthEast)));
-            keys[2] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.East)));
-            keys[3] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.NorthEast)));
-            keys[4] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.North)));
-            keys[5] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.NorthWest)));
-            keys[6] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.West)));
-            keys[7] = TrimEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.SouthWest)));
+            keys[0] = TrimEntity(smooth, _mapSystem.GetAnchoredEntities(gridUid, grid, pos.Offset(Direction.South)));
+            keys[1] = TrimEntity(smooth, _mapSystem.GetAnchoredEntities(gridUid, grid, pos.Offset(Direction.SouthEast)));
+            keys[2] = TrimEntity(smooth, _mapSystem.GetAnchoredEntities(gridUid, grid, pos.Offset(Direction.East)));
+            keys[3] = TrimEntity(smooth, _mapSystem.GetAnchoredEntities(gridUid, grid, pos.Offset(Direction.NorthEast)));
+            keys[4] = TrimEntity(smooth, _mapSystem.GetAnchoredEntities(gridUid, grid, pos.Offset(Direction.North)));
+            keys[5] = TrimEntity(smooth, _mapSystem.GetAnchoredEntities(gridUid, grid, pos.Offset(Direction.NorthWest)));
+            keys[6] = TrimEntity(smooth, _mapSystem.GetAnchoredEntities(gridUid, grid, pos.Offset(Direction.West)));
+            keys[7] = TrimEntity(smooth, _mapSystem.GetAnchoredEntities(gridUid, grid, pos.Offset(Direction.SouthWest)));
 
             int cornerSE = keys[0] + 3 * keys[1] + 9 * keys[2];
             int cornerNE = keys[2] + 3 * keys[3] + 9 * keys[4];
@@ -270,14 +270,14 @@ namespace Content.Client._FunkyStation.EdgeTrim
             }
 
             // Just taken from IconSmoothing
-            DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector2i(1, 0)));
-            DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector2i(-1, 0)));
-            DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector2i(0, 1)));
-            DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector2i(0, -1)));
-            DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector2i(1, 1)));
-            DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector2i(-1, -1)));
-            DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector2i(-1, 1)));
-            DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector2i(1, -1)));
+            DirtyEntities(_mapSystem.GetAnchoredEntities(entityUid, grid, pos + new Vector2i(1, 0)));
+            DirtyEntities(_mapSystem.GetAnchoredEntities(entityUid, grid, pos + new Vector2i(-1, 0)));
+            DirtyEntities(_mapSystem.GetAnchoredEntities(entityUid, grid, pos + new Vector2i(0, 1)));
+            DirtyEntities(_mapSystem.GetAnchoredEntities(entityUid, grid, pos + new Vector2i(0, -1)));
+            DirtyEntities(_mapSystem.GetAnchoredEntities(entityUid, grid, pos + new Vector2i(1, 1)));
+            DirtyEntities(_mapSystem.GetAnchoredEntities(entityUid, grid, pos + new Vector2i(-1, -1)));
+            DirtyEntities(_mapSystem.GetAnchoredEntities(entityUid, grid, pos + new Vector2i(-1, 1)));
+            DirtyEntities(_mapSystem.GetAnchoredEntities(entityUid, grid, pos + new Vector2i(1, -1)));
         }
 
         private void DirtyEntities(AnchoredEntitiesEnumerator entities)
