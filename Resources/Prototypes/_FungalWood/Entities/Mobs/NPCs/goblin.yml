@@ -11,10 +11,7 @@
     speechSounds: Lizard
     speechVerb: Reptilian
   - type: Vocal
-    sounds:
-      Male: MaleReptilian
-      Female: FemaleReptilian
-      Unsexed: MaleReptilian
+    emoteSounds: MaleReptilian
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -51,7 +48,6 @@
       state: "creampie_human"
       visible: false
   - type: Butcherable
-    butcheringType: Spike
     spawned:
     - id: FoodMeatRotten #gross!
       amount: 2
@@ -69,5 +65,5 @@
 - type: entity
   name: goblin
   id: FWMobGoblin
-  parent: MobBaseGoblin
+  parent: FWMobBaseGoblin
   description: A little green guy. It looks bad and smells worse.

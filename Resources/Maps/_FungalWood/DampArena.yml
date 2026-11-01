@@ -7,7 +7,7 @@
   randomRotation: false
   stations:
     DampArena:
-      stationProto: PlanetMap
+      stationProto: StandardNanotrasenStation
       components:
       - type: StationBiome
         biome: Grasslands
