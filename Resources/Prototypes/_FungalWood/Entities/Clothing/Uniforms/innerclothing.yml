@@ -41,25 +41,3 @@
     sprite: _FungalWood/Clothing/Uniforms/king.rsi
   - type: Clothing
     sprite: _FungalWood/Clothing/Uniforms/king.rsi
-
-- type: entity
-  parent: ClothingUniformBase
-  id: ClothingUniformGuardsmanC
-  name: guardsman captain uniform
-  description: Bonk with authority.
-  components:
-  - type: Sprite
-    sprite: _FungalWood/Clothing/Uniforms/tguardC.rsi
-  - type: Clothing
-    sprite: _FungalWood/Clothing/Uniforms/tguardC.rsi
-
-- type: entity
-  parent: ClothingUniformBase
-  id: ClothingUniformKing
-  name: the king's robes
-  description: Awarded at some farcical aquatic ceremony.
-  components:
-  - type: Sprite
-    sprite: _FungalWood/Clothing/Uniforms/king.rsi
-  - type: Clothing
-    sprite: _FungalWood/Clothing/Uniforms/king.rsi
