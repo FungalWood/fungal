@@ -17,15 +17,15 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server._CP14.BiomeSpawner.EntitySystems;
 
-public sealed class CP14BiomeSpawnerSystem : EntitySystem
+public sealed partial class CP14BiomeSpawnerSystem : EntitySystem
 {
-    [Dependency] private readonly IPrototypeManager _proto = default!;
-    [Dependency] private readonly BiomeSystem _biome = default!;
-    [Dependency] private readonly TransformSystem _transform = default!;
-    [Dependency] private readonly SharedMapSystem _maps = default!;
-    [Dependency] private readonly DecalSystem _decals = default!;
-    [Dependency] private readonly EntityLookupSystem _lookup = default!;
-    [Dependency] private readonly CP14RoundSeedSystem _roundSeed = default!;
+    [Dependency] private IPrototypeManager _proto = default!;
+    [Dependency] private BiomeSystem _biome = default!;
+    [Dependency] private TransformSystem _transform = default!;
+    [Dependency] private SharedMapSystem _maps = default!;
+    [Dependency] private DecalSystem _decals = default!;
+    [Dependency] private EntityLookupSystem _lookup = default!;
+    [Dependency] private CP14RoundSeedSystem _roundSeed = default!;
 
     public override void Initialize()
     {

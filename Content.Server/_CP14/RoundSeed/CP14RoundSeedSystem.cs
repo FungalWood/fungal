@@ -15,9 +15,9 @@ namespace Content.Server._CP14.RoundSeed;
 /// <summary>
 /// Provides a round seed for another systems
 /// </summary>
-public sealed class CP14RoundSeedSystem : EntitySystem
+public sealed partial class CP14RoundSeedSystem : EntitySystem
 {
-    [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private IRobustRandom _random = default!;
 
     public override void Initialize()
     {
